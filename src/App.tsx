@@ -1,7 +1,14 @@
+import { useState } from "react";
+import Header from "./components/Header";
+
+type Views = "landing" | "login" | "todos";
+
 function App() {
+  const [view, setView] = useState<Views>("landing");
+  
   return (
     <>
-      <h1 className="text-6xl text-purple-900 font-extrabold">Todo!</h1>
+      <Header />
     </>
   );
 }
