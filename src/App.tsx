@@ -2,12 +2,13 @@ import { useState } from "react";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import LoginPage from "./pages/LoginPage";
+import TodoPage from "./pages/TodoPage";
 
-type Views = "login" | "todos";
+type Views = "login" | "todo";
 type Theme = "light" | "dark";
 
 function App() {
-  const [view, setView] = useState<Views>("login");
+  const [view, setView] = useState<Views>("todo");
   const [theme, setTheme] = useState<Theme>("light");
 
   return (
@@ -16,6 +17,7 @@ function App() {
       <Wrapper>
         <Header />
         {view === "login" && (<LoginPage />)}
+        {view === "todo" && (<TodoPage />)}
       </Wrapper>
     </div>
   );
