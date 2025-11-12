@@ -16,8 +16,8 @@ function App() {
       <div className="bg-[url('/bg-desktop-light.webp')] bg-top bg-no-repeat h-[200px] md:h-[300px] w-full"></div>
       <Wrapper>
         <Header />
-        {view === "login" && (<LoginPage />)}
-        {view === "todo" && (<TodoPage />)}
+        {view === "login" && <LoginPage />}
+        {view === "todo" && <TodoPage />}
       </Wrapper>
     </div>
   );
