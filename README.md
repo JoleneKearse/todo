@@ -70,27 +70,9 @@ I wanted to use **Storybook v10**, which can be used with both **Vite** and **We
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I wanted to get **authentication** set up first thing, and spiraled down quite a rabbit hole researching various ways to go about it. I finally setted on [Auth0](https://auth0.com/docs) for the built-in security.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+However, I kept getting the error `callback URL mismatch` and, in fact, this was the only _guidance_ I was getting! It just would not recognize `localhost`. Finally I looked at the URL bar and saw it was going to `http://127.0.0.1`, so they really hadn't been matching!
 
 ### Continued development
 
