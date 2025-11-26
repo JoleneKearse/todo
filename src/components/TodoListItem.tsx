@@ -1,5 +1,5 @@
-
 import Cancel from "../assets/icon-cross.svg";
+
 const TodoListItem = () => {
     return ( <li>
         <input type="checkbox" name="" id="" />
